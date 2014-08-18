@@ -1,7 +1,7 @@
 manbepo
 =======
 
-Manpage for the french keyboard layout BÉPO <http://bépo.fr>
+Manpage for the french keyboard layout [BÉPO](http://bépo.fr)
 
 This is a man page for BÉPO, it discribe how to install, launch, and use it.
 
