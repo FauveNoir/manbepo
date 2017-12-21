@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fauve">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link rel="shortcut icon" href="./favicon.png">
+    <title>BÉPO — Disposition de clavier francophone ergonomique fondée sur la méthode dvorak</title>
+
+    <link href="./default.css" rel="stylesheet">
+    <link href="./molokai.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav>
+      <div>
+      bépo(1)
+      </div>
+      <div>
+      Manuel des interfaces homme-machine
+      </div>
+      <div>
+      bépo
+      </div>
+    </nav>
+    <article>
+    <h1><a name="name"></a><a href="#name">Name</a></h1>
+    <p>
+    BÉPO — Disposition de clavier francophone ergonomique fondée sur la méthode dvorak
+    </p>
+
+    <h1><a name="carte"></a><a href="#carte">Carte</a></h1>
+    <h2><a name="carte-simplifiée"></a><a href="#carte-simplifiée">Carte simplifiée</a></h2>
+       <pre>┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────╔════════╗
+│    │    │    │    │    │    │    │    │    │    │    │    │    ║        ║
+│  $ │  " │  « │  » │  ( │  ) │  _ │  + │  - │  / │  * │  = │  % ║ &gt;--    ║
+╔════╧══╗─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─╚══╦═════╣
+║  |&lt;-  ║    │    │    │    │    │    │    │    │    │    │    │    ║   | ║
+║  -&gt;|  ║  B │  É │  P │  O │  È │  ^ │  V │  D │  L │  J │  Z │  W ║ &lt;-' ║
+╠═══════╩╗───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───╚╗    ║
+║        ║    │    │    │    │    │    │    │    │    │    │    │    ║    ║
+║  CAPS  ║  A │  U │  I │  E │  , │  C │  T │  S │  R │  N │  M │  Ç ║    ║
+╠══════╦═╝──┬─┴──┬─┴──┬─┴─══─┴──┬─┴──┬─┴─══─┴──┬─┴──┬─┴──┬─┴──╔═╧════╩════╣
+║   ^  ║    │    │    │    │    │    │    │    │    │    │    ║     ^     ║
+║   |  ║  Ê │  À │  Y │  H │  . │  K │  ' │  Q │  G │  X │  F ║     |     ║
+╠══════╩╦═══╧══╦═╧═══╦╧════╧════╧════╧════╧════╧═╦══╧══╦═╧════╬═════╦═════╣
+║       ║      ║     ║ NBSPACE      FINE-NBSPACE ║     ║      ║     ║     ║
+║ Ctrl  ║ WinG ║ Alt ║ SPACE                     ║AltGr║ WinD ║WinM ║ Ctrl║
+╚═══════╩══════╩═════╩═══════════════════════════╩═════╩══════╩═════╩═════╝</pre>
+
+    <h2><a name="carte-complette"></a><a href="#carte-complette">Carte complète</a></h2>
+       <pre>┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────╔════════╗
+│ # ¶│ 1 „│ 2 “│ 3 ”│ 4 ≤│ 5 ≥║ 6  │ 7 ¬│ 8 ¼│ 9 ½│ 0 ¾│ ° ′│ ` ″║        ║
+│ $ –│" ––│ « &lt;│ » &gt;│ ( [│ ) ]║ @ ^│ + ±│ - −│ / ÷│ * ×│ = ≠│ % ‰║ &lt;--    ║
+╔════╧══╗─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─╚══╦═════╣
+║  |&lt;-  ║ B ¦│ É ˝│ P §│ O Œ│ È `║ !  │ V  │ D Ð│ L  │ J Ĳ│ Z Ə│ W  ║   | ║
+║  -&gt;|  ║ b |│ é ´│ p &│ o œ│ è `║ ˆ ¡│ v ˇ│ d ð│ l /│ j ĳ│ z ə│ w ˘║ &lt;-' ║
+╠═══════╩╗───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───╚╗    ║
+║        ║ A Æ│ U Ù│ I ˙│ E ¤│ ; ̛║ C ſ│ T Þ│ S  │ R ™│ N  │ M º│ Ç ,║    ║
+║  CAPS  ║ a æ│ u ù│ i ¨│ e €│ , ’║ c ©│ t þ│ s ß│ r ®│ n ˜│ m ¯│ ç ¸║    ║
+╠══════╦═╝──┬─┴──┬─┴──┬─┴─══─┴──┬─┴──┬─┴─══─┴──┬─┴──┬─┴──┬─┴──╔═╧════╩════╣
+║   ^  ║ Ê  │ À  │ Y ‘│ X ’│ : ·│ K  ║ ?  │ Q  │ G  │ H ‡│ F ª║     ^     ║
+║   |  ║ ê /│ à \│ y {│ x }│ . …│ k ~║ ' ¿│ q °│ g µ│ h †│ f ˛║     |     ║
+╠══════╩╦═══╧══╦═╧═══╦╧════╧════╧════╧════╧════╧═╦══╧══╦═╧════╬═════╦═════╣
+║       ║      ║     ║ insécable   fine insécable║     ║      ║     ║     ║
+║ Ctrl  ║ WinG ║ Alt ║ SPACE        _            ║AltGr║ WinD ║WinM ║ Ctrl║
+╚═══════╩══════╩═════╩═══════════════════════════╩═════╩══════╩═════╩═════╝</pre>
+
+       <p>
+Sur cette carte, chaque touche est représenté par un carré qui délimite les symbole qu’elle produit. En sachant que sur ce carré, le symbole représenté en bas à gauche est indique le caractère produit en accès dirrecte, c’est à dire par appuis simple sur cette touche ; le symbole en bas à droite indique le carctère produit par la combinaison d’AltGr et de la dite touche ; le symbole en haut à gauche est celui produit par la combinaison de la touche Maj et de la touche en question ; et que le caractère en haut à droite est indique le symbole produit par la double combinaison de la touche Maj et d’AltGr sur la dite touche.
+       </p>
+<pre>┌────┐
+│ A Æ│
+│ a æ│
+└────┘</pre>
+
+       <p>
+Cette touche, par exemple, est la n-ième du clavier. Le « a » y est en accès dirrecte, l’« æ » en AltGR, l’« A » en Maj et l’« Æ » en AltGR+Maj.
+       </p>
+
+    <h1><a name="description"></a><a href="#description">Description</a></h1>
+    <p>
+    <span class="constant">BÉPO</span> est une disposition de clavier ergonomique destinée à l’utilisation de la langue française et optimisée pour les clavier 102touches  européen mais compatible avec les claviers américains.
+    </p>
+    <p>
+Son élaboration, fondée sur les principes d’Auguste Dvorjak, tient compte de la fréquence d’apparition des caractères en langue française mais aussi dans les activités anexes des francophones comme la programmation. Ainsi, les touches les plus utilisées se retrouvent majoritairement sur la ligne de repos. De plus, la disposition BÉPO permet une alternance des caractères fréquemment accolés, rendant plus simple la saisie des digrammes.
+    </p>
+
+    <p>
+En tant que disposition destinée à l’usage des francophones, BÉPO simplifie l’accès aux symboles nécessaires à la langue française dans le soucis d’une typographie soignée.
+Ainsi, les caractères « é », « è », « ê », « à », « ç » se trouvent en accès directe, de même que leur majuscules « É », « È », « Ê », « À », « Ç » sont accessible par simple pression sur SHIFT
+    </p>
+
+    <p>
+    L’accès aux symboles annexes aussi s’en retrouve simplifié. Par exemple, les guillemets français de premier niveau “«»”, ou de second niveau « “” », le tiret quadratin « — » sont en accès directe.<br />
+Par ailleurs, la disposition BÉPO ne néglige pas l’usage de langues étrangères que peut avoir un francophones, c’est pourquoi il est possible de produire tous les caractères en usage dans toutes les langues de l’Union européenne ainsi que les caractères spécifiques au Turque et à l’Azery. Il est même possible, moyennant une configuration (Voir ci-dessous), d’inclure à BÉPO un modificateur grecque qui donne l’accès à tout l’alphabet grec.
+    </p>
+
+    <p>
+Ainsi, BÉPO est particulièrement adapté aux francophones et utilisateur massifs du français. Néanmoins, l’efficacité de cette disposition n’est atteinte que pour l’utilisation à laquelle elle a été prévue c’est à dire la frappe à l’aveugle à dix doigts.
+    </p>
+
+    <p>
+La dispositon BÉPO est déstinée aux individus ayant l’usage et la pleine motricité de leurs deux mais et dix doigts. Pour les personnes ne remplissant pas ces conditions, voir les projets connexes.
+    </p>
+
+    <h1><a name="utilisation"></a><a href="#utilisation">Utilisation</a></h1>
+    <h2><a name="utilisation-activation"></a><a href="#utilisation-activation">Activation</a></h2>
+
+    <h1><a name="caractères"></a><a href="#caractères">Caractères pris en charge</a></h1>
+    <h1><a name="touches-mortes"></a><a href="#touches-mortes">Touches mortes</a></h1>
+    <p>
+    Les touches mortes sont des touches qui ne produisent pas de caractère, mais qui permettent de modifier le caractère suivant.
+    </p>
+    <h1><a name="terminologie"></a><a href="#terminologie">Terminologie</a></h1>
+    <dl>
+      <dt>
+      Accès direct
+      </dt>
+      <dd>
+      Un caractère est en accès direct lorsque, pour le composer, il suffit d'appuyer une et une seule fois sur une touche du clavier, quelle que soit cette touche. Cela signifie qu'il ne faut utiliser ni modificateur, ni touche morte, qu'il n'est pas nécessaire d'appuyer deux fois sur la touche, etc. C'est le mode de composition le plus simple et le plus ergonomique. Toutefois, un caractère en accès direct mais placé sur une touche difficilement accessible (touches sur les cotés du clavier ou au centre en haut, petite touche, etc.) peut n'être que moyennement facile à composer — l'accès direct n'est donc pas forcément la panacée. Dans le cadre de la création d'une nouvelle disposition de clavier raisonnée, on réserve évidemment les accès directs aux caractères les plus fréquents, puis on s'intéresse à la répartition de ces caractères sur le clavier, ce qui constitue le cœur du problème. Par la suite se posera le problème des accès indirects, dits « séquentiels. » 
+      </dd>
+
+      <dt>
+      Alt
+      </dt>
+      <dd>
+      <p>
+      Alt est une touche modificatrice se situant généralement à gauche de la barre d’espace.
+      </p>
+       <pre>║  Ê │  À │  Y │  H │  . 
+╩╦═══╧══╦═╧═══╦╧════╧════
+ ║      ║     ║          
+ ║ WinG ║ Alt ║ SPACE    
+═╩══════╩═════╩══════════</pre>
+      </dd>
+
+      <dt>
+      AltGr
+      </dt>
+      <dd>
+      <p>
+      AltGr (Alternate Graphic) est une touche modificatrice, se trouvant généralement à droite de la barre d’espace, permettant l'accès à un certain nombre de caractères annexes. Dans la disposition bépo, cette touche est largement utilisée et fonctionne rigoureusement comme Maj.
+      </p>
+       <pre> │  ' │  Q │  G │  X 
+═╧════╧════╧═╦══╧══╦═
+     Éspace  ║     ║ 
+             ║AltGr║ 
+═════════════╩═════╩═</pre>
+      </dd>
+
+      <dt>
+      Azerty
+      </dt>
+      <dd>
+      Disposition historique du clavier français.
+      </dd>
+
+      <dt>
+      bépoète ou bépoïste
+      </dt>
+      <dd>
+      Un utilisateur de la disposition de clavier bépo.
+      </dd>
+
+      <dt>
+      CapsLock
+      </dt>
+      <dd>
+      La touche CapsLock (de caps lock en anglais, littéralement « verrouiller les majuscules »), dénommé Verr. Maj ou VerrMaj (voire « Verrouiller Maj » en toutes lettres) en français, permet d'activer un mode majuscule continu, à la manière d'un interrupteur. C'est donc une touche assimilée à une touche morte quant à son fonctionnement, mais en réalité, elle possède un comportement variable selon le système d'exploitation. La disposition bépo limite son usage à la composition des majuscules et chiffres pour viser la portabilité maximale. 
+      </dd>
+
+      <dt>
+      Carte simplifiée
+      </dt>
+      <dd>
+      La carte simplifiée est une vue schématique partielle de la disposition bépo, présentant seulement les caractères les plus importants.
+      </dd>
+
+      <dt>
+      Compose (Unix)
+      </dt>
+      <dd>
+      Compose est un mécanisme de modification ponctuelle de saisie. Une touche dite « touche morte » permet d'activer une séquence de composition étendue. L'appui successif sur une ou plusieurs touches permettra de composer un très grand nombre de caractères. Contrairement aux touches de modification, la touche affectée à la fonction Compose ne doit pas être maintenue appuyée en vue de réaliser une combinaison : elle agit comme une bascule entre le mode de frappe normal et le mode Compose. Après l'appui sur la touche Compose, les touches suivantes sont interprétées séquentiellement dans ce mode. Si la séquence tapée n'existe pas, le clavier repasse en mode normal. C'est donc une solution assez ergonomique, puisqu'elle ne brise pas la séquence continue de frappe et ne nécessite pas l'usage des deux mains comme c'est souvent le cas pour un raccourci avec une touche modificatrice. Un problème important reste celui de la portabilité d'un tel mécanisme.
+      </dd>
+
+      <dt>
+      Convention de nommage des touches
+      </dt>
+      <dd>
+        <dt>{b}</dt>
+        <dd>Touche b en bépo</dd>
+
+        <dt>[a]</dt>
+        <dd>Touche a en azerty</dd>
+
+        <dt>A sans fioritures</dt>
+        <dd>Désigne le caractère A</dd>
+      </dd>
+
+      <dt>
+      Disposition, ou disposition de clavier
+      </dt>
+      <dd>
+      Manière d'organiser les touches sur un clavier. L'azerty, le bépo et le qwerty sont des exemples de dispositions de clavier. Aussi appelée parfois « layout » ou « keymap » (de l'anglais).
+      </dd>
+
+      <dt>
+      Espace insécable
+      </dt>
+      <dd>
+      L’espace insécable est une espace typographique qui lie deux symboles ayant un lien sémantique fort. Sa présence entre les deux symboles qui l’encadrent interdit qu’ils puissent être séparés (à l’occasion d’une justification ou un saut de ligne par exemple).<br />
+      L'espace insécable est présente sur le bépo en Maj+Espace. L’espace fine est présente en AltGr+Maj+Espace, mais attention à son usage : seules les polices de haute volée la gèrent correctement.
+      </dd>
+
+
+      <dt>
+      Frappe à l’aveugle
+      </dt>
+      <dd>
+      Manière de taper au clavier à 10 doigts sans le regarder, en se repérant avec les picots sur les touches [f] et [j]. Aussi dénommée parfois « frappe en aveugle », puisqu'on ne regarde pas le clavier.
+      </dd>
+
+      <dt>
+      Maj
+      </dt>
+      <dd>
+      La touche Maj (pour « Majuscule »), souvent dénommée Shift, est un modificateur qui permet notamment de composer les capitales des lettres de l'alphabet. Elle intervient aussi dans beaucoup de raccourcis. Il s'agit d'une touche symétrique, associée à la touche Verr. Maj.
+      </dd>
+
+      <dt>
+      Modificateur
+      </dt>
+      <dd>
+        <p>
+        Un modificateur ou touche modificatrice/de modification est une touche qui permet de modifier le comportement d'une autre touche lorsque les deux sont appuyées en même temps. L'utilisateur doit ainsi, séquentiellement :
+        </p>
+        
+        <ol>
+        	<li>appuyer sur le modificateur — qui n'a pas d'effet par lui-même et ne compose donc pas de caractère ;</li>
+        	<li>le garder enfoncé ;</li>
+        	<li>appuyer sur une autre touche, afin de déclencher une action quelconque.</li>
+        </ol>
+        
+        <p>
+        Les modificateurs permettent, soit de composer d'autres caractères que ceux obtenus en accès direct, soit de déclencher des raccourcis clavier. Un exemple bien connu est le raccourci Alt+F4 qui, en général, ferme la fenêtre active et/ou quitte le programme courant : « Alt » est le modificateur de cette combinaison de touches, « F4 » ayant ici un comportement (fermer la fenêtre active) différent de celui obtenu sans modificateur (par exemple, F4 en accès direct affiche les favoris dans le navigateur Firefox, et réaliserait sans doute une action différente dans un autre programme !). 
+        </p>
+      </dd>
+
+      <dt>
+      Qwerty
+      </dt>
+      <dd>
+      Disposition historique des claviers anglophones. 
+      </dd>
+
+      <dt>
+      raccourci clavier
+      </dt>
+      <dd>
+      Un raccourci clavier est une combinaison de touches qui, une fois enfoncée, permet d'exécuter un programme ou une fonction/commande particulière dans un programme. Un célèbre raccourci clavier est Alt+F4, faisant intervenir le modificateur « Alt. » 
+      </dd>
+
+      <dt>
+      Touche morte
+      </dt>
+      <dd>
+      <p>
+      Une touche morte est une touche qui ne provoque pas l’affichage immédiat d'un caractère, mais modifie l’effet de la prochaine frappe.
+      </p>
+
+      <p>
+      Exemple : la touche ¨, appuyée et relâchée, ne provoque pas d'affichage, mais si elle est suivie de la touche e, le caractère « ë » est composé, ce qui permet notamment d'écrire correctement le mot « noël. »
+      </p>
+
+      <p>
+      Il faut bien distinguer les touches mortes des touches modificatrices tel que « AltGr. » Les modificateurs n'agissent sur la frappe suivante que si elles restent enfoncées (notion usuelle de raccourci clavier). 
+      </p>
+      </dd>
+
+      <dt>
+      XKB (Unix)
+      </dt>
+      <dd>
+        <p>
+        XKB, pour X keyboard extension, est un programme qui étend les possibilités de X Window (X.org, X11) pour le contrôle du clavier. Les caractéristiques principales de XKB sont :
+        </p>
+        
+        <ol>
+        <li>support amélioré des modificateurs ;</li>
+        <li>meilleur traitement des groupes de touches ;</li>
+        <li>contrôle étendu des indicateurs sonores et visuels du clavier (dels et bips) ;</li>
+        <li>introduction de nouveaux paramètres de contrôle du clavier ;</li>
+        <li>association d’actions aux touches (d'un type particulier).</li>
+        </ol>
+        
+        <p>
+        XKB est largement répandu dans le monde Unix.
+        </p>
+      </dd>
+    </dl>
+
+
+
+    <h1><a name="couches"></a><a href="#couches">Couches</a></h1>
+    <h1><a name="compose"></a><a href="#compose">Compose</a></h1>
+    <h1><a name="auteur"></a><a href="#auteur">Auteur</a></h1>
+    <p>
+    Fauve (Aka Idriss al Idrissi), communauté BÉPO &lt;http://bépo.fr&gt;, &lt;fauve [POINT] ordinator [AROBASE] taniere [POINT] info&gt;.
+    </p>
+    </article>
+    <footer>
+      <div>
+      Manuel des interfaces homme-machine
+      </div>
+      <div>
+      2017-12-21
+      </div>
+      <div class="externalCommand">
+      bépo(1)
+      </div>
+    </footer>
+  </body>
+</html>

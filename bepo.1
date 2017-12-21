@@ -39,10 +39,7 @@ BÉPO /- Disposition de clavier francophone ergonomique fondée sur la méthode 
 ║ Ctrl  ║ WinG ║ Alt ║ SPACE        _            ║AltGr║ WinD ║WinM ║ Ctrl ║
 ╚═══════╩══════╩═════╩═══════════════════════════╩═════╩══════╩═════╩══════╝
 
-Sur cette carte, chaque touche est représenté par un caré qui délimite les symbole qu’elle produit. En sachant que sur ce carré, le symbole représenté en bas à gauche est indique le caractère
- produit en accès dirrecte, c’est à dire par appuis simple sur cette touche ; le symbole en bas à droite indique le carctère produit par la combinaison d’AltGr et de la dite touche ; le symbo
-le en haut à gauche est celui produit par la combinaison de la touche Maj et de la touche en question ; et que le caractère en haut à droite est indique le symbole produit par la double combi
-naison de la touche Maj et d’AltGr sur la dite touche.
+Sur cette carte, chaque touche est représenté par un caré qui délimite les symbole qu’elle produit. En sachant que sur ce carré, le symbole représenté en bas à gauche est indique le caractère produit en accès dirrecte, c’est à dire par appuis simple sur cette touche ; le symbole en bas à droite indique le carctère produit par la combinaison d’AltGr et de la dite touche ; le symbole en haut à gauche est celui produit par la combinaison de la touche Maj et de la touche en question ; et que le caractère en haut à droite est indique le symbole produit par la double combinaison de la touche Maj et d’AltGr sur la dite touche.
 
 ┌────┐
 │ A Æ│
@@ -72,6 +69,8 @@ Ainsi, BÉPO est particulièrement adapté aux francophones et utilisateur massi
 
 La dispositon BÉPO est déstinée aux individus ayant l’usage et la pleine motricité de leurs deux mais et dix doigts. Pour les personnes ne remplissant pas ces conditions, voir les projets con
 curents.
+
+.SH TERMINOLOGIE
 
 .SH ACTIVATION DANS X.org
 Pour X.org, La disposition bépo s’active par la commande "setxkbmap fr bepo".
@@ -119,7 +118,7 @@ loadkeys fr
 .RE
 
 
-/fBDebian/fP
+.SS Debian
 Sous Debian, le paquet "console-data" contient déjà la disposition BÉPO. Pour l’installer, il suffit de saisir :
 .RS
 sudo aptitude install console-data
@@ -127,7 +126,7 @@ sudo loadkeys dvorak-fr-bepo
 Le fichier associé se situe alors dans /usr/share/keymaps/i386/dvorak/dvorak-fr-bepo.kmap.gz
 .RE
 
-/fBArchlinux/fP
+.SS Archlinux
 Vous pouvez installer BÉPO en installant le paquet nomé "bepo-keymaps" :
 .RS
 pacman -S bepo-keymaps
@@ -139,12 +138,67 @@ Après avoir activé la disposition BÉPO et affin de tirrer au mieux l’avanta
 .SH APPRENTISSAGE
 
 .SH CARACTÈRES PRIS EN CHARGE
+Les caractères listés ici sont en accès direct, aux niveaux majuscule ou AltGr, selon leur fréquence respective. Beaucoup sont accessibles avec une ou plusieurs touches mortes.
+
+Sous GNU/Linux, certaines touches mortes supplémentaires sont disponibles via l’ajout d’une touche compose.
+
+Les caractères non disponibles mais prévus sont marqués d’un astérisque « * ».
+
+.SS Tous ceux des claviers azerty
+Les 142 caractères présents sur les claviers azerty français
+
+.RS
+44 majuscules et 47 minuscules : A a À à Â â Ä ä Ã ã B b C c ç D d E e é È è Ê ê Ë ë F f G g H h I i Ì ì Î î Ï ï J j K k L l M m N n Ñ ñ O o Ò ò Ô ô Ö ö Õ õ P p Q q R r S s T t U u Ù ù Û û Ü ü V v W w X x Y y ÿ Z z ;
+.RE
+
+.RS
+30 symboles typographiques : _ - ' . , ; : ! ? @ & § ~ ^ ` ¨ ° | ( ) { } [ ] / \ < > " # ;
+.RE
+
+.RS
+16 chiffres, opérations : 0 1 2 3 4 5 6 7 8 9 ² * + = % µ ;
+.RE
+
+.RS
+4 unités monétaires : € $ ¤ £ ;
+.RE
+
+.RS
+1 espace ;
+.RE
+
+les 13 caractères supplémentaires du clavier azerty belge :´ Á á É Í í Ó ó Ú ú Ý ý ³ ;
+
+.SS La disposition inclut également
+Les 15 caractères nécéssaires à une composition soignée en français, sans terme étranger
+
+les 84 lettres et 6 symboles supplémentaires des 21 langues officielles de l’Union européenne utilisant l’alphabet latin
+
+les caractères suivants, utilisables pour une composition très soignée : · ± × ÷ † ‡ ′ ″ ` • ‹ › ‿ ⁂ ; 
+
+d’autres caractères pouvant être utiles : ¶ ¦ ¬ © ® ™ ª º ♯ ♮ ♭ ;
+
+les lettres des langues suivantes non mentionnées ci-dessus : 
+
+les lettres du grec monotonique, très utilisées dans les domaines techniques : Α Β Δ Ε Φ Γ Η Ι Θ Κ Λ Μ Ν Ο Π Χ Ρ Σ Τ Υ Ω Ξ Ψ Ζ α β δ ε φ γ η ι θ κ λ μ ν ο π χ ρ σ τ υ ω ξ ψ ζ (sans les variantes ϐ ϵ ϴ ϑ ϰ ϖ ϱ ς ϒ ϕ).
+
+les symboles monétaires : ฿ ₵ ¢ ₡ ₫ € ƒ ₲ ₴ ₭ £ ₤ ₥ ₦ ₱ ₨ ৲ ৳ 元 圓 $ ₪ ₮ ₩ ¥ ₳ ₢ ₰ ₯ ₠ ₣ ℳ ₧
+
+les caractères de l’alphabet phonétique international utilisés pour les langues ci-dessus ;
+
+les caractères désuets des langues à script roman en Europe : ĸ ſ ƶ Ƶ ;
+
+les lettres des langues et transcriptions suivantes : 
+
 
 .SH EXTENSION DU CHAMP DES POSSIBILITÉS
 
+
 .SH PROBLÈMES CONNUS
 
+
 .SH VOIR AUSSI
+
 
 .SH AUTEUR
 Fauve (Aka Idriss al Idrissi), communauté BÉPO <http://bépo.fr>, <mailto:fauve [POINT] ordinator [AROBASE] taniere [POINT] info>.
